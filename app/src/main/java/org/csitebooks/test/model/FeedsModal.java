@@ -1,14 +1,24 @@
 
 package org.csitebooks.test.model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FeedsModal {
 
+    @SerializedName("success")
+    @Expose
     private Integer success;
+    @SerializedName("msg")
+    @Expose
     private String msg;
-    private List<Feed> feeds = new ArrayList<Feed>();
+    @SerializedName("feeds")
+    @Expose
+    private List<Feed> feeds = new ArrayList<>();
+
 
     /**
      * 

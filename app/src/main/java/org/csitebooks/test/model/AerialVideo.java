@@ -2,9 +2,16 @@
 package org.csitebooks.test.model;
 
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class AerialVideo {
 
+    @SerializedName("title")
+    @Expose
     private String title;
+    @SerializedName("url")
+    @Expose
     private String url;
 
     /**

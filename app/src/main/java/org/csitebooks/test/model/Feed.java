@@ -1,30 +1,73 @@
 
 package org.csitebooks.test.model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Feed {
 
+    @SerializedName("id")
+    @Expose
     private String id;
+    @SerializedName("property_name")
+    @Expose
     private String propertyName;
+    @SerializedName("image")
+    @Expose
     private String image;
+    @SerializedName("video")
+    @Expose
     private String video;
+    @SerializedName("sale_date")
+    @Expose
     private String saleDate;
+    @SerializedName("district_name")
+    @Expose
     private String districtName;
+    @SerializedName("address")
+    @Expose
     private String address;
+    @SerializedName("sale_status")
+    @Expose
     private String saleStatus;
+    @SerializedName("is_star")
+    @Expose
     private String isStar;
+    @SerializedName("list_view_image")
+    @Expose
     private String listViewImage;
+    @SerializedName("comment_count")
+    @Expose
     private String commentCount;
+    @SerializedName("favor_count")
+    @Expose
     private String favorCount;
-    private List<String> developerName = new ArrayList<String>();
+    @SerializedName("developer_name")
+    @Expose
+    private List<String> developerName = new ArrayList<>();
+    @SerializedName("nick_name")
+    @Expose
     private String nickName;
-    private List<Indoor360> indoor360 = new ArrayList<Indoor360>();
-    private List<AerialVideo> aerialVideo = new ArrayList<AerialVideo>();
+    @SerializedName("indoor_360")
+    @Expose
+    private List<Indoor360> indoor360 = new ArrayList<>();
+    @SerializedName("aerial_video")
+    @Expose
+    private List<AerialVideo> aerialVideo = new ArrayList<>();
+    @SerializedName("img_name")
+    @Expose
     private String imgName;
+    @SerializedName("p_resize_url")
+    @Expose
     private String pResizeUrl;
+    @SerializedName("list_img_name")
+    @Expose
     private String listImgName;
+    @SerializedName("l_resize_url")
+    @Expose
     private String lResizeUrl;
 
     /**
